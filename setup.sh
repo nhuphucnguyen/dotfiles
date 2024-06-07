@@ -2,7 +2,7 @@ ln -s $(pwd)/zshrc $HOME/.zshrc
 ln -s $(pwd)/bashrc $HOME/.bashrc
 ln -s $(pwd)/aliasrc $HOME/.aliasrc
 mkdir -p $HOME/.config/tmux
-ln -s $(pwd)/tmux.conf $HOME/.tmux.conf
+ln -s $(pwd)/tmux.conf $HOME/.config/tmux/.tmux.conf
 
 #nvim
 mv ~/.config/nvim{,.bak}
@@ -18,5 +18,3 @@ curl -s "https://get.sdkman.io" | bash
 
 # git config
 git config --global core.excludesFile "$(pwd)/git-global-ignore"
-git config --global user.name "Phuc Nguyen"
-git config --global user.email "phucnn.work@gmail.com"

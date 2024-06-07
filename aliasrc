@@ -1,3 +1,4 @@
 alias dcp='docker compose'
 alias vim='nvim'
 alias laws='aws --endpoint-url=https://localhost.localstack.cloud:4566'
+alias gus='git status'
