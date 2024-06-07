@@ -100,8 +100,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source $HOME/.aliasrc
+source $HOME/.tokenrc
+export JAVA21_HOME=$HOME/.sdkman/candidates/java/21.0.3-amzn
+export JAVA17_HOME=$HOME/.sdkman/candidates/java/17.0.11-amzn
 export PATH="$PATH:/opt/nvim-linux64/bin"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 eval "$(direnv hook zsh)"
+eval "$(zoxide init zsh)"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
