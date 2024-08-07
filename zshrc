@@ -103,6 +103,7 @@ source $HOME/.aliasrc
 source $HOME/.tokenrc
 export JAVA21_HOME=$HOME/.sdkman/candidates/java/21.0.3-amzn
 export JAVA17_HOME=$HOME/.sdkman/candidates/java/17.0.11-amzn
+export JAVA8_HOME=$HOME/.sdkman/candidates/java/8.0.412-amzn
 export PATH="$PATH:/opt/nvim-linux64/bin"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 eval "$(direnv hook zsh)"
