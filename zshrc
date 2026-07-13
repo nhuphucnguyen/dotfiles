@@ -101,9 +101,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source $HOME/.aliasrc
 source $HOME/.tokenrc
-export JAVA21_HOME=$HOME/.sdkman/candidates/java/21.0.3-amzn
-export JAVA17_HOME=$HOME/.sdkman/candidates/java/17.0.11-amzn
-export JAVA8_HOME=$HOME/.sdkman/candidates/java/8.0.412-amzn
 export PATH="$PATH:/opt/nvim-linux64/bin"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 eval "$(direnv hook zsh)"
@@ -115,3 +112,15 @@ export PATH="$PATH:/Users/phucngu/.local/bin" # Added by Docker Labs Debug Tools
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+export TESTCONTAINERS_RYUK_DISABLED=true
+
+# opencode
+export PATH=/Users/phucngu/.opencode/bin:$PATH
+
+# >>> grok installer >>>
+export PATH="$HOME/.grok/bin:$PATH"
+fpath=(~/.grok/completions/zsh $fpath)
+autoload -Uz compinit && compinit -C
+# <<< grok installer <<<

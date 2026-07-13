@@ -7,3 +7,15 @@ alias gpr='git pull --rebase'
 alias cls='clear'
 alias gco='git checkout'
 alias gcob='git checkout -b'
+
+# docker
+alias dlog='docker logs'
+
+alias tml='tmux list-session'
+alias tmas='tmux attach-session -t'
+alias pip='uv pip'
+
+alias glmcode='CLAUDE_CONFIG_DIR=$HOME/.glmcode claude'
+alias claudeteam='CLAUDE_CONFIG_DIR=/opt/workspace/.claude-instances/claude-team claude'
+alias claudepersonal='CLAUDE_CONFIG_DIR=/opt/workspace/.claude-instances/claude-personal claude'
+alias run-ol='java -Xms512m -Xmx1g -XX:+UseZGC -Dspring.config.additional-location=/opt/appconfig/workflow-orchestrator/application-local.properties -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.local.only=true -jar /opt/workspace/workflow-orchestrator/target/workflow-orchestrator-6.0.0-SNAPSHOT.jar'
